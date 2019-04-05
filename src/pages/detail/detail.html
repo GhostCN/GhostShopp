@@ -65,6 +65,23 @@
         </span>
     </p>
     <p>{{productDetail.description}}</p>
+    <ion-grid padding>
+      <ion-row>
+        <ion-col col-9>
+          <ionic3-star-rating
+            activeIcon = "ios-star"
+            defaultIcon = "ios-star-outline"
+            activeColor = "#f4e242"
+            defaultColor = "#f4f4f4"
+            readonly="false"
+            [rating]="3">
+          </ionic3-star-rating>
+        </ion-col>
+        <ion-col col-2>
+        <button ion-button round color="secondary">Noter</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card-content>
 
 </ion-card>
